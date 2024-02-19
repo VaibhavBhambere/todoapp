@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+
+{% block title %}
+update
+    
+{% endblock title %}
+    
+
+{% block body %}
+<div class="container">
+    <H1 class="display-4">Add Your Todo Here</H1>
+    <form  action="" method="post">
+
+        <div class="form-group ">
+          <label for="s1">Sr.No</label>
+          <input type="number" class="form-control" id="s1" aria-describedby="emailHelp" placeholder="Enter sr.no" name="sr" value="{{todo.sr_no}}">
+         
+        </div>
+        <div class="form-group">
+          <label for="t1">Title</label>
+          <input type="text" class="form-control" id="t1" placeholder="Enter Title here" name="title" value="{{todo.title}}">
+        </div>
+
+        <div class="form-group">
+            <label for="d1">Discription</label>
+            <input type="text" class="form-control" id="d1" placeholder="Enter description here" name="des" value="{{todo.description}}">
+          </div>
+     
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+</div>
+
+    
+{% endblock body %}
+    
